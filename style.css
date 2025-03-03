@@ -1,0 +1,106 @@
+/* Base Styles and Typography */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Avenir LT W01 35 Light", sans-serif;
+  background-color: #a1bfa7;
+  color: #fff8e9;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 0.5em;  /* remove default top margin, keep bottom spacing */
+}
+p {
+  margin: 0 0 1em;
+  line-height: 1.6;
+}
+
+
+/* HERO SECTION WITH PARALLAX */
+.hero-parallax {
+  background: url('https://source.unsplash.com/1600x900/?therapy,office') center/cover no-repeat fixed;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  color: #fff8e9;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  color: #e4c58a;
+}
+
+/* IMAGE GALLERY */
+.image-gallery {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.image-gallery h2 {
+  font-size: 2rem;
+  color: #fff8e9;
+  margin-bottom: 2rem;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.gallery img {
+  width: 30%;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  padding: 1.5em 1em;
+  text-align: center;
+}
+.footer-content p {
+  margin: 0.2em 0;
+}
+.footer-content p strong {
+  font-size: 1.1em;
+}
+
+
+
+/* Responsive Design: Mobile and Tablet Styles */
+@media (max-width: 600px) {
+   
+  /* Stack hero section vertically */
+  .hero {
+    flex-direction: column;
+    padding: 1.5em 1em;
+  }
+  .hero-content {
+    text-align: center;
+    padding: 1em;
+  }
+  .hero-content h1 {
+    font-size: 2em;
+  }
+
+}
