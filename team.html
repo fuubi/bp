@@ -10,7 +10,6 @@
 
 <body>
 
-
   <!-- Desktop Header (Visible on Large Screens) -->
   <header id="desktop-header"
     style="position: fixed; width: 100%; top: 0; left: 0; background-color: #a1bfa7; padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; z-index: 1000;">
@@ -94,7 +93,7 @@
     </li>
   </ul>
 
-
+  <!-- Header Display Rules -->
   <style>
     /* Desktop: Show Desktop Header, Hide Mobile Header */
     #desktop-header {
@@ -117,7 +116,6 @@
     }
   </style>
 
-
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const burgerMenu = document.getElementById("burger-menu");
@@ -133,318 +131,333 @@
     });
   </script>
 
+  <!-- Team Section -->
+  <div style="width: 100%; height: 100%; display: flex; width: 100vw; justify-content: center;">
 
-
-
-  <section id="team" style="
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-gap: 2rem;
-padding: 4rem 2rem;
-text-align: center;
-justify-content: center;
-align-items: center;
-min-height: 100vh; /* Centers the grid in the viewport */
-">
-
-
+  <section id="team" 
+    style="
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      padding: 6rem 2rem;
+      text-align: center;
+      justify-items: center;
+      align-items: center;
+      min-height: 100vh;
+      max-width: 800px;
+    ">
 
     <!-- Team Member 1 -->
     <div class="grid-cell" style="display: flex; align-items: center; justify-content: center;">
       <div class="team-card" style="
-    perspective: 1000px;
-    width: 350px;
-    height: 350px;
-    position: relative;
-    cursor: pointer;
-  ">
-        <div class="card-inner" style="
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      transform-style: preserve-3d;
-      transition: transform 0.6s;
-    " onclick="flipCard(this)">
-
-          <!-- Front Side (Profile Image + Name) -->
-          <div class="card-front" style="
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-        background: url('./img/kim.png') center/cover no-repeat;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-      ">
-            <div style="
-          background: rgba(0, 0, 0, 0.7);
-          color: #fff8e9;
-          padding: 0.5rem;
-          font-size: 1.1rem;
-          font-weight: bold;
-          text-align: center;
-          border-bottom-left-radius: 10px;
-          border-bottom-right-radius: 10px;
+          perspective: 1000px;
+          width: 80vw;
+          max-width: 350px;
+          height: 350px;
+          position: relative;
+          cursor: pointer;
         ">
+        <div class="card-inner" style="
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+          " onclick="flipCard(this)">
+
+          <!-- Front Side -->
+          <div class="card-front" style="
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              backface-visibility: hidden;
+              background: url('./img/kim.png') center/cover no-repeat;
+              border-radius: 10px;
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-end;
+            ">
+            <div style="
+                background: rgba(0, 0, 0, 0.7);
+                color: #fff8e9;
+                padding: 0.5rem;
+                font-size: 1.1rem;
+                font-weight: bold;
+                text-align: center;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+              ">
               Dr. med. Dipl. Psych. Annette Gnatzy
             </div>
           </div>
 
-          <!-- Back Side (Profile Details) -->
+          <!-- Back Side -->
           <div class="card-back" style="
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-        background: #e4c58a;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 1rem;
-        border-radius: 10px;
-        transform: rotateY(180deg);
-      ">
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              backface-visibility: hidden;
+              background: #e4c58a;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              padding: 1rem;
+              border-radius: 10px;
+              transform: rotateY(180deg);
+            ">
             <h3 style="color: #793F35; font-size: 1.2rem; font-weight: bold;">Dr. med. Dipl. Psych. Annette Gnatzy</h3>
             <p style="color: #793F35; font-size: 1rem;">Fachärztin Psychiatrie und Psychotherapie</p>
             <p style="color: #793F35; font-size: 0.9rem;">Angebot: Einzeltherapie für Erwachsene, Paartherapie...</p>
             <a href="./team-kim.html"
-              style="margin-top: 1rem; padding: 0.5rem 1rem; background: #793F35; color: #fff8e9; text-decoration: none; border-radius: 5px;">Zum
-              Profil</a>
+              style="margin-top: 1rem; padding: 0.5rem 1rem; background: #793F35; color: #fff8e9; text-decoration: none; border-radius: 5px;">
+              Zum Profil
+            </a>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Team Member 1 -->
+    <!-- Team Member 2 -->
     <div class="grid-cell" style="display: flex; align-items: center; justify-content: center;">
       <div class="team-card" style="
-    perspective: 1000px;
-    width: 350px;
-    height: 350px;
-    position: relative;
-    cursor: pointer;
-  ">
-        <div class="card-inner" style="
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      transform-style: preserve-3d;
-      transition: transform 0.6s;
-    " onclick="flipCard(this)">
-
-          <!-- Front Side (Profile Image + Name) -->
-          <div class="card-front" style="
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-        background: url('./img/kim.png') center/cover no-repeat;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-      ">
-            <div style="
-          background: rgba(0, 0, 0, 0.7);
-          color: #fff8e9;
-          padding: 0.5rem;
-          font-size: 1.1rem;
-          font-weight: bold;
-          text-align: center;
-          border-bottom-left-radius: 10px;
-          border-bottom-right-radius: 10px;
+          perspective: 1000px;
+          width: 80vw;
+          max-width: 350px;
+          height: 350px;
+          position: relative;
+          cursor: pointer;
         ">
-              Dr. med. Dipl. Psych. Annette Gnatzy
+        <div class="card-inner" style="
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+          " onclick="flipCard(this)">
+
+          <!-- Front Side -->
+          <div class="card-front" style="
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              backface-visibility: hidden;
+              background: url('./img/kim.png') center/cover no-repeat;
+              border-radius: 10px;
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-end;
+            ">
+            <div style="
+                background: rgba(0, 0, 0, 0.7);
+                color: #fff8e9;
+                padding: 0.5rem;
+                font-size: 1.1rem;
+                font-weight: bold;
+                text-align: center;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+              ">
+              Stefanie Mujic 
             </div>
           </div>
 
-          <!-- Back Side (Profile Details) -->
+          <!-- Back Side -->
           <div class="card-back" style="
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-        background: #e4c58a;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 1rem;
-        border-radius: 10px;
-        transform: rotateY(180deg);
-      ">
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              backface-visibility: hidden;
+              background: #e4c58a;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              padding: 1rem;
+              border-radius: 10px;
+              transform: rotateY(180deg);
+            ">
+            <h3 style="color: #793F35; font-size: 1.2rem; font-weight: bold;">
+              Stefanie Mujic 
+</h3>
+            <p style="color: #793F35; font-size: 1rem;">Fachärztin Psychiatrie und Psychotherapie</p>
+            <p style="color: #793F35; font-size: 0.9rem;">Angebot: Einzeltherapie für Erwachsene, Paartherapie...</p>
+            <a href="#"
+              style="margin-top: 1rem; padding: 0.5rem 1rem; background: #793F35; color: #fff8e9; text-decoration: none; border-radius: 5px;">
+              Zum Profil
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team Member 3 -->
+    <div class="grid-cell" style="display: flex; align-items: center; justify-content: center;">
+      <div class="team-card" style="
+          perspective: 1000px;
+          width: 80vw;
+          max-width: 350px;
+          height: 350px;
+          position: relative;
+          cursor: pointer;
+        ">
+        <div class="card-inner" style="
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+          " onclick="flipCard(this)">
+
+          <!-- Front Side -->
+          <div class="card-front" style="
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              backface-visibility: hidden;
+              background: url('./img/kim.png') center/cover no-repeat;
+              border-radius: 10px;
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-end;
+            ">
+            <div style="
+                background: rgba(0, 0, 0, 0.7);
+                color: #fff8e9;
+                padding: 0.5rem;
+                font-size: 1.1rem;
+                font-weight: bold;
+                text-align: center;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+              ">
+             Ann-Kathrin Scholz 
+            </div>
+          </div>
+
+          <!-- Back Side -->
+          <div class="card-back" style="
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              backface-visibility: hidden;
+              background: #e4c58a;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              padding: 1rem;
+              border-radius: 10px;
+              transform: rotateY(180deg);
+            ">
+            <h3 style="color: #793F35; font-size: 1.2rem; font-weight: bold;">Ann-Kathrin Scholz</h3>
+            <p style="color: #793F35; font-size: 1rem;">Fachärztin Psychiatrie und Psychotherapie</p>
+            <p style="color: #793F35; font-size: 0.9rem;">Angebot: Einzeltherapie für Erwachsene, Paartherapie...</p>
+            <a href="#"
+              style="margin-top: 1rem; padding: 0.5rem 1rem; background: #793F35; color: #fff8e9; text-decoration: none; border-radius: 5px;">
+              Zum Profil
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team Member 4 -->
+    <div class="grid-cell" style="display: flex; align-items: center; justify-content: center;">
+      <div class="team-card" style="
+          perspective: 1000px;
+          width: 80vw;
+          max-width: 350px;
+          height: 350px;
+          position: relative;
+          cursor: pointer;
+        ">
+        <div class="card-inner" style="
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+          " onclick="flipCard(this)">
+
+          <!-- Front Side -->
+          <div class="card-front" style="
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              backface-visibility: hidden;
+              background: url('./img/kim.png') center/cover no-repeat;
+              border-radius: 10px;
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-end;
+            ">
+            <div style="
+                background: rgba(0, 0, 0, 0.7);
+                color: #fff8e9;
+                padding: 0.5rem;
+                font-size: 1.1rem;
+                font-weight: bold;
+                text-align: center;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+              ">
+             Kim Buchmüller 
+            </div>
+          </div>
+
+          <!-- Back Side -->
+          <div class="card-back" style="
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              backface-visibility: hidden;
+              background: #e4c58a;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              padding: 1rem;
+              border-radius: 10px;
+              transform: rotateY(180deg);
+            ">
             <h3 style="color: #793F35; font-size: 1.2rem; font-weight: bold;">Dr. med. Dipl. Psych. Annette Gnatzy</h3>
             <p style="color: #793F35; font-size: 1rem;">Fachärztin Psychiatrie und Psychotherapie</p>
             <p style="color: #793F35; font-size: 0.9rem;">Angebot: Einzeltherapie für Erwachsene, Paartherapie...</p>
             <a href="#"
-              style="margin-top: 1rem; padding: 0.5rem 1rem; background: #793F35; color: #fff8e9; text-decoration: none; border-radius: 5px;">Zum
-              Profil</a>
+              style="margin-top: 1rem; padding: 0.5rem 1rem; background: #793F35; color: #fff8e9; text-decoration: none; border-radius: 5px;">
+              Zum Profil
+            </a>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- Team Member 1 -->
-    <div class="grid-cell" style="display: flex; align-items: center; justify-content: center;">
-      <div class="team-card" style="
-    perspective: 1000px;
-    width: 350px;
-    height: 350px;
-    position: relative;
-    cursor: pointer;
-  ">
-        <div class="card-inner" style="
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      transform-style: preserve-3d;
-      transition: transform 0.6s;
-    " onclick="flipCard(this)">
-
-          <!-- Front Side (Profile Image + Name) -->
-          <div class="card-front" style="
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-        background: url('./img/kim.png') center/cover no-repeat;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-      ">
-            <div style="
-          background: rgba(0, 0, 0, 0.7);
-          color: #fff8e9;
-          padding: 0.5rem;
-          font-size: 1.1rem;
-          font-weight: bold;
-          text-align: center;
-          border-bottom-left-radius: 10px;
-          border-bottom-right-radius: 10px;
-        ">
-              Dr. med. Dipl. Psych. Annette Gnatzy
-            </div>
-          </div>
-
-          <!-- Back Side (Profile Details) -->
-          <div class="card-back" style="
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-        background: #e4c58a;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 1rem;
-        border-radius: 10px;
-        transform: rotateY(180deg);
-      ">
-            <h3 style="color: #793F35; font-size: 1.2rem; font-weight: bold;">Dr. med. Dipl. Psych. Annette Gnatzy</h3>
-            <p style="color: #793F35; font-size: 1rem;">Fachärztin Psychiatrie und Psychotherapie</p>
-            <p style="color: #793F35; font-size: 0.9rem;">Angebot: Einzeltherapie für Erwachsene, Paartherapie...</p>
-            <a href="#"
-              style="margin-top: 1rem; padding: 0.5rem 1rem; background: #793F35; color: #fff8e9; text-decoration: none; border-radius: 5px;">Zum
-              Profil</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Team Member 1 -->
-    <div class="grid-cell" style="display: flex; align-items: center; justify-content: center;">
-      <div class="team-card" style="
-    perspective: 1000px;
-    width: 350px;
-    height: 350px;
-    position: relative;
-    cursor: pointer;
-  ">
-        <div class="card-inner" style="
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      transform-style: preserve-3d;
-      transition: transform 0.6s;
-    " onclick="flipCard(this)">
-
-          <!-- Front Side (Profile Image + Name) -->
-          <div class="card-front" style="
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-        background: url('./img/kim.png') center/cover no-repeat;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-      ">
-            <div style="
-          background: rgba(0, 0, 0, 0.7);
-          color: #fff8e9;
-          padding: 0.5rem;
-          font-size: 1.1rem;
-          font-weight: bold;
-          text-align: center;
-          border-bottom-left-radius: 10px;
-          border-bottom-right-radius: 10px;
-        ">
-              Dr. med. Dipl. Psych. Annette Gnatzy
-            </div>
-          </div>
-
-          <!-- Back Side (Profile Details) -->
-          <div class="card-back" style="
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-        background: #e4c58a;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 1rem;
-        border-radius: 10px;
-        transform: rotateY(180deg);
-      ">
-            <h3 style="color: #793F35; font-size: 1.2rem; font-weight: bold;">Dr. med. Dipl. Psych. Annette Gnatzy</h3>
-            <p style="color: #793F35; font-size: 1rem;">Fachärztin Psychiatrie und Psychotherapie</p>
-            <p style="color: #793F35; font-size: 0.9rem;">Angebot: Einzeltherapie für Erwachsene, Paartherapie...</p>
-            <a href="#"
-              style="margin-top: 1rem; padding: 0.5rem 1rem; background: #793F35; color: #fff8e9; text-decoration: none; border-radius: 5px;">Zum
-              Profil</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- Repeat the same structure for other team members -->
-    <!-- Just change the names and titles accordingly -->
 
   </section>
+  </div>
 
-
-
+  <!-- Make it flip -->
   <script>
     let isFlipping = false;
     function flipCard(card) {
+      if (isFlipping) return;
+      isFlipping = true;
+      setTimeout(() => {
+        isFlipping = false;
+      }, 300);
 
-      if (isFlipping) return
-      isFlipping = true
-      setTimeout(() => { isFlipping = false }, 300)
       card.style.transform = (card.style.transform === "rotateY(180deg)") ? "rotateY(0deg)" : "rotateY(180deg)";
     }
   </script>
 
-
+  <!-- Responsive Team Grid (one column on mobile) -->
+  <style>
+    @media (max-width: 768px) {
+      #team {
+        grid-template-columns: 1fr !important;
+      }
+    }
+  </style>
 
   <!-- Footer -->
   <footer>
@@ -457,5 +470,4 @@ min-height: 100vh; /* Centers the grid in the viewport */
   </footer>
 
 </body>
-
 </html>
